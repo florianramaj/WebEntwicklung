@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>div</title>
+        <style>
+
+        body{
+            margin: 0;
+        }
+        div {
+            background: red;
+            width: 50px;
+            height: 50px;
+         }
+
+         #first {
+            position: static;
+        }
+
+        #second {
+            position: relative;
+            left: 50px;
+            top: -25px;
+
+        }
+
+        #third {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+
+        #fourth {
+            position: fixed;
+            top: 75px;
+            left: 150px;
+        }
+
+        #fifth {
+            position: static;
+            margin-left:200px;
+        }
+        </style>
+    </head>
+    <main>   
+        <body>
+            <div id="first">item1</div>
+            <div id="second">item2</div>
+            <div id="third">item3</div>
+            <div id="fourth">item4</div>
+            <div id="fifth">item5</div>
+        </body>
+    </main>
+</html> 
