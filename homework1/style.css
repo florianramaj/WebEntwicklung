@@ -11,8 +11,13 @@
 {
     margin-left: 1px;
 }
-.carousel-inner{
+.carousel-inner
+{
     width:100%;
-  }
+}
+#logoBootstrap
+{
+    height: 30px;
+}
 
 
