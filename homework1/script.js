@@ -2,8 +2,7 @@ AOS.init();
 var clickedButton = false;
 
 function showText() {
-    if(document.getElementById("firstName").value === "" || document.getElementById("TextArea").value ==="")
-    {
+    if (document.getElementById("firstName").value === "" || document.getElementById("TextArea").value === "") {
         alert("Please enter a Firstname and a text!");
         return;
     }
@@ -17,19 +16,16 @@ function showAnimation() {
     if (!clickedButton) {
         clickedButton = true;
     }
-    else
-    {
+    else {
         clickedButton = false;
     }
-    
+
     for (i = 0; i < c.length; i++) {
-        if (c[i].classList == "progress")
-        {
+        if (c[i].classList == "progress") {
             if (clickedButton) {
                 c[i].childNodes[1].classList.add("progress-bar-animated");
             }
-            else 
-            {
+            else {
                 c[i].childNodes[1].classList.remove("progress-bar-animated");
             }
         }
