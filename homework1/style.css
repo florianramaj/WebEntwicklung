@@ -22,6 +22,11 @@
 #jumbotronStart
 {
     margin-top: 20px;
+    margin-bottom: 0px;
+}
+#card
+{
+    max-width: 18rem;
 }
 
 
