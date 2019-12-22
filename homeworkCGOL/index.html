@@ -52,16 +52,16 @@
             <label>Generationszähler: </label>
             <label id="idGenerationCounter">0</label>
             <div>
-                <input type="color" id="aliveColor" name="head" value="#007bff">
-                <label for="head">Color for cell that is alive</label>
+                <input type="color" id="aliveColor" value="#007bff">
+                <label>Color for cell that is alive</label>
             </div>
             <div>
-                <input type="color" id="deathColor" name="head" value="#dc3545">
-                <label for="head">Color for cell that is death</label>
+                <input type="color" id="deathColor" value="#dc3545">
+                <label>Color for cell that is death</label>
             </div>
             <div>
-                <input type="color" id="livedOnceColor" name="head" value="#008000">
-                <label for="head">Color for cell that was alive.</label>
+                <input type="color" id="livedOnceColor" value="#008000">
+                <label>Color for cell that was alive</label>
             </div>
             <form>
                 <div class="form-row">
@@ -82,7 +82,7 @@
                 </div>
             </form>
         </div>
-        <div>
+        <div id ="cgolDiv">
             <cgol-pitch></cgol-pitch>
         </div>
     </main>

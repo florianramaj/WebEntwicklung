@@ -40,9 +40,6 @@ class CgolPitch extends HTMLElement {
         initializeGameField(this.width, this.height);
     }
     clickedDiv() {
-        console.log('clicked');
-        console.log(event);
-        console.log(event.target.id);
         const id = event.target.id;
         const item = document.getElementById(id);
         const strId = id.split('x');
@@ -277,7 +274,6 @@ function loadLevelButtonHandler(input) {
             maxCol = normalCol;
         }
     }
-    console.log('MaxCol ' + maxCol + 'Row ' + normalRow);
     setSizeButtonhandler(normalRow, maxCol);
     resetGrid();
     updateView();
@@ -291,7 +287,6 @@ function loadLevelButtonHandler(input) {
         if (input[index] === '\n') {
             rows++;
             cols = 0;
-            console.log(rows);
             continue;
         }
         if (input[index] === '1' && cols < gameField[0].length) {
@@ -306,10 +301,10 @@ function loadLevelButtonHandler(input) {
 }
 function setSizeButtonhandler(heightSize, widthSize) {
     if (heightSize == null || heightSize < 10) {
-        return;
+        heightSize = 10;
     }
     if (widthSize == null || widthSize === undefined || widthSize < 10) {
-        return;
+        widthSize = 10;
     }
     playing = false;
     const pith = document.getElementsByTagName('cgol-pitch')[0];
