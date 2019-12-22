@@ -1,0 +1,36 @@
+{
+  "name": "packagehomework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cgolPitch.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "gulp": "^4.0.2",
+    "gulp-debug": "^4.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlhint": "^3.0.0",
+    "gulp-htmllint": "^0.0.16",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "htmllint": "^0.8.0",
+    "tslint": "^5.20.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp-tslint": "^8.1.4",
+    "gulp-uncomment": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
